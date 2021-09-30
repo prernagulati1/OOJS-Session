@@ -8,13 +8,18 @@
 </head>
 <body>
     <script>
-
-        function timer(){
-            const a = [1,2,3,4,5];
-            for (const val of a) { 
-                console.log(val);
-        }}
-        setTimeout(timer, 3000)
+ 
+        function timer() {
+        let arr = [1, 2, 3, 4, 5];
+        for(let i=0;i<arr.length;i++){
+        setTimeout(function () {
+           {
+               console.log(arr[i]);
+           }
+        }, i*3000);
+    }
+    }
+    timer();
 
     </script>
 </body>

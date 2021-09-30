@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var person1 = {firstName: 'Mohd.', lastName: 'Ali'};
+        var person2 = {firstName: 'Jaspreet', lastName: 'Singh'};
+
+        function say(greeting) {
+            console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+        }
+
+        say.call(person1, 'Hello'); 
+        say.call(person2, 'Hello'); 
+
+    </script>
+
+</body>
+</html>
